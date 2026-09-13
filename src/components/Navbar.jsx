@@ -3,21 +3,47 @@ import React from "react";
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo">
-        🚗 <span>Wheelzy</span>
+
+      {/* LEFT - WHEELZY LOGO */}
+      <div className="navbar-logo">
+        <img
+          src="/images/wheelzy-logo.png"
+          alt="Wheelzy Logo"
+        />
       </div>
 
-      <div className="nav-links">
-        <a href="#">Vehicles</a>
-        <a href="#">Drivers</a>
-        <a href="#">My Bookings</a>
-        <a href="#">About</a>
+      {/* CENTER - NAVIGATION */}
+      <div className="navbar-links">
+        <a href="#home" className="active">
+          Home
+        </a>
+
+        <a href="#vehicles">
+          Vehicles
+        </a>
+
+        <a href="#drivers">
+          Drivers
+        </a>
+
+        <a href="#about">
+          About
+        </a>
       </div>
 
-      <div className="nav-right">
-        <button className="driver-btn">Become a Driver</button>
-        <button className="login-btn">Login</button>
+      {/* RIGHT - ACTION BUTTONS */}
+      <div className="navbar-actions">
+
+        <button className="driver-btn">
+          👨‍✈️ Become a Driver
+        </button>
+
+        <button className="login-btn">
+          Login
+        </button>
+
       </div>
+
     </nav>
   );
 }
