@@ -1,25 +1,21 @@
 import React from "react";
+import { CATEGORIES } from "../data/mockData";
 
-function CategoryBar() {
-  const categories = [
-    "🚗 Cars",
-    "🏍️ Bikes",
-    "🚙 SUVs",
-    "🚐 Vans",
-    "🚌 Buses",
-    "🚛 Trucks",
-    "👨‍✈️ Drivers",
-  ];
-
+export default function CategoryBar({ activeCategory, onSelectCategory }) {
   return (
-    <div className="category-bar">
-      {categories.map((category, index) => (
-        <div className="category" key={index}>
-          {category}
-        </div>
-      ))}
+    <div className="category-bar-wrapper">
+      <div className="category-bar">
+        {CATEGORIES.map((cat) => (
+          <button
+            key={cat.id}
+            className={`category-pill ${activeCategory === cat.id ? "active" : ""}`}
+            onClick={() => onSelectCategory(cat.id)}
+          >
+            <span>{cat.icon}</span>
+            <span>{cat.label}</span>
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
-
-export default CategoryBar;
