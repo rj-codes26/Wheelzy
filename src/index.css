@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 75px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 45px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #0b57d0;
+}
+
+.logo span {
+  margin-left: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-right button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.driver-btn {
+  border: 1px solid #0b57d0;
+  background: white;
+  color: #0b57d0;
+}
+
+.login-btn {
+  border: none;
+  background: #0b57d0;
+  color: white;
+}
+
+/* Categories */
+
+.category-bar {
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  padding: 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+.category {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  padding: 65px 30px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero > p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Search */
+
+.search-box {
+  width: 70%;
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  background: white;
+  border: 2px solid #0b57d0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 18px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  width: 120px;
+  border: none;
+  background: #0b57d0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Options */
+
+.hero-options {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.option-card {
+  background: white;
+  width: 280px;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.option-card span {
+  font-size: 40px;
+}
+
+.option-card h2 {
+  margin: 15px 0 10px;
+}
+
+.option-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.option-card button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #0b57d0;
+  color: white;
+  cursor: pointer;
+}
